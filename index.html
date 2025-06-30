@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="blow-sound" src="https://www.soundjay.com/human/sounds/breath-out-01.mp3"></audio>
+  <audio id="cheer-sound" src="https://www.soundjay.com/human/sounds/applause-8.mp3"></audio>
+
+  <h1 class="title">🎉 Happy Birthday! 🎂</h1>
+
+  <div class="container">
+    <div class="cake">
+      <div class="candles">
+        <div class="candle" onclick="blowCandle(this)"><div class="flame"></div></div>
+        <div class="candle" onclick="blowCandle(this)"><div class="flame"></div></div>
+        <div class="candle" onclick="blowCandle(this)"><div class="flame"></div></div>
+        <div class="candle" onclick="blowCandle(this)"><div class="flame"></div></div>
+        <div class="candle" onclick="blowCandle(this)"><div class="flame"></div></div>
+      </div>
+      <div class="layer layer-top"></div>
+      <div class="layer layer-middle"></div>
+      <div class="layer layer-bottom"></div>
+    </div>
+    <p>Click the candles to blow them out!</p>
+  </div>
+
+  <canvas id="confetti"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
